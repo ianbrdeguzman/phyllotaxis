@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Phyllotaxis</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <div>
+                <label for="radius">Radius</label>
+                <input type="range" id="radius" value="1" min="1" max="20">
+            </div>
+            <div>
+                <label for="color-stroke">Stroke</label>
+                <input type="color" id="color-stroke">
+            </div>
+            <div>
+                <label for="color-fill">Fill</label>
+                <input type="color" id="color-fill">
+            </div>
+            <div>
+                <label for="select">Angle</label>
+                <select id="select">
+                    <option value="2.3963371">137.3°</option>
+                    <option value="2.3998277" selected>Golden Ratio</option>
+                    <option value="2.4015731">137.6°</option>
+                </select>
+            </div>
+        </div>
+        <canvas></canvas>
+        <div class="buttons">
+            <button><i id="download" class="fas fa-download"></i></button>
+            <button><i id="print" class="fas fa-print"></i></button>
+            <button><i id="refresh" class="fas fa-redo-alt"></i></button>
+            <button><i id="play" class="fas fa-play-circle"></i></button>
+        </div>
+    </div>
+</body>
+</html>
