@@ -69,3 +69,17 @@ input[type=range] {
     background: transparent;
     border: none;
 }
+
+footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    font-size: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer p a {
+    color: #272727;
+}
